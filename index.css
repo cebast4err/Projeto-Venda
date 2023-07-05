@@ -1,0 +1,730 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Catamaran', sans-serif;    
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100%;
+    background-color: white;
+    padding: 35px 55px;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.burger-menu {
+    position: absolute;
+    top: 3.5%;
+    right: 15%;
+}
+.lista-2 {
+    display: none;
+}
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header p {
+    font-weight: 1000;
+    letter-spacing: 3px;
+}
+header h1 {
+    letter-spacing: 8px;
+    font-size: 1.7rem;
+}
+.big-page {
+  position: fixed; 
+  top: 0;
+  left: 23%;
+  width: 80%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  z-index: 2000;
+
+  display: block;
+  transform: translateX(100%);
+  transition: transform 0.5s;
+  flex-direction: column;
+}
+.lista {
+    position: relative;
+    top: 5%;
+    left: 20%;
+
+    font-size: 1.25rem;
+    font-weight: 600;
+    list-style: none;
+    width: 80%;
+}
+.lista li {
+    margin-top: 15px;
+    color: rgb(162, 162, 162);
+    cursor: pointer;
+}
+.lista li:hover {
+    color: rgb(255, 255, 255);
+    transition-delay: 0.07s;
+}
+.drop1, .drop2, .drop3, .drop4 {
+    display: none;
+    list-style: none;
+    margin: 14px auto 20px auto;
+}
+.drop1 a, .drop2 a, .drop3 a, .drop4 a {
+    text-decoration: none;
+    color: rgb(162, 162, 162);
+    font-size: 14px;
+}
+.drop1 li, .drop2 li, .drop3 li, .drop4 li {
+    margin-top: 4px;
+}
+.drop1 a:hover, .drop2 a:hover, .drop3 a:hover, .drop4 a:hover {
+    color: white;
+    transition-delay: 0.07s;
+}
+.drop-li {
+    display: none;
+} 
+.drop3 > li > a {
+    font-size: 15px;
+}
+.drop-dropli a {
+    font-size: 12px;
+}
+.drop-dropli {
+    list-style: none;
+}
+.drop1 li:hover, .drop2 li:hover, .drop3 li ul li:hover, .drop4 li:hover {
+    margin-left: 5px;
+}
+.big-page p {
+    right: 11%;
+    top: 2.5%;
+    position: absolute;
+    font-weight: 900;
+    color: white;
+}
+.big-page i {
+    font-size: 12px;
+}
+
+.figures-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    margin-top: 80px;
+}
+.fig-1 {
+    position: relative;
+    width: 280px;
+    box-shadow: 1px 7px 20px;
+}
+.figures-1 img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    height: 200px;
+}
+.figures-1 img:hover {
+    height: 205px;
+}
+.fig-1:hover {
+    width: 285px;
+    height: 205px;
+}
+.text-1 h2, .text-2 h2, .text-3 h2 {
+    position: absolute;
+    left: 0;
+    top: -35px;
+    color: rgb(18, 17, 17);
+    font-size: 1.3rem;
+
+    letter-spacing: 2.2px;
+}
+.text-1 p, .text-2 p, .text-3 p  {
+    display: none;
+}
+.box-of-text-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.box-of-text-2 h3 {
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+.box-of-text-2 p {
+    font-size: 1.6rem;
+    margin-bottom: 85px;
+}
+
+
+.left, .right, .left2, .right-2 {
+    position: absolute;
+    height: 30px;
+    width: 40px;
+    font-size: 1.3rem;
+    align-items: center;
+    cursor: pointer;
+
+    color: rgb(69, 69, 69);
+}
+.left:hover, .right:hover, .right-2:hover, .left-2:hover {
+    opacity: .6;
+}
+.left {
+    top: 1.5%;
+    right: 65px;
+}
+.right {
+    top: 1.5%;
+    right: 9.3%;
+}
+.figure-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+}
+.figure-2 p {
+    font-weight: 900;
+    font-size: 1.15rem;
+}
+.container {
+    overflow: scroll;
+    scroll-snap-type: both mandatory;
+    scroll-padding: 1rem;
+    max-width: 272px;  
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.caixa, .caixa2, .caixa3 {
+    margin-bottom: 100px;
+}
+.container p {
+    margin-bottom: 10px;
+}
+
+.carrosel-1 { 
+    display: flex;
+    width: 260px;
+}
+.Imgs {
+    width: 300px;
+    text-align: center;
+}
+.Imgs img{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.Imgs p{
+    margin-top: 6px;
+    opacity: .5;
+}
+.Imgs span {
+    font-size: 1.35rem;
+    font-weight: 900;
+}
+.figure-3 {
+    width: 90%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20% 10%;
+    margin-top: 100px;
+
+    background-color: rgb(202, 202, 202);
+}
+.figure-3 h1 {
+    font-size: 1.2rem;
+}
+.container-2 {
+    width: 100%;  
+    overflow: scroll;
+    scroll-snap-type: both mandatory;
+    scroll-padding: 1rem;
+    scroll-behavior: smooth;
+}
+.carrosel-2 {
+    display: flex;
+    width: 640px;
+}
+.box-of-text {
+    width: 800px;
+    text-align: center;
+}
+.box-of-text span {
+    font-size: .85rem;
+}
+.name {
+    font-size: 1.2rem;
+    font-weight: 900;
+
+    margin-top: 15px;
+}
+.job {
+    font-size: 0.9rem;
+    opacity: .6;
+}
+.left-2 {
+    position: absolute;
+    left: 5%;
+    bottom: -117%;
+    font-size: 25px;
+}
+.right-2 {
+    position: absolute;
+    right: 8.5%;
+    bottom: -118%;
+    font-size: 25px;
+}
+
+footer {
+    padding: 10% 0 0 0;
+    width: 100%;
+}
+  
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+  
+.footer-column {
+    flex: 1;
+    margin-bottom: 20px;
+}
+  
+.footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+  
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+  
+footer li a {
+    color: #333;
+    text-decoration: none;
+    line-height: 1.5;
+}
+  
+.social-icons {
+    display: flex;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+  
+.social-icons a {
+    color: #333;
+    font-size: 20px;
+}
+  
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    color: #888;
+}
+  
+@media screen and (min-width: 768px) {
+    .caixa {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .big-page {
+        top: 0;
+        left: 45%;
+        width: 55%;
+    }
+    .fig-1 {
+        position: relative;
+        right: -14%;
+        width: 75%;
+    }
+    .fig-1 img {
+        width: 100%;
+        display: block;
+        height: 100%;
+    }
+    img:hover {
+        height: 80%;
+    }
+    .fig-1:hover {
+        width: 75%;
+        height: 100%;
+    }
+    .left {
+        top: 1.5%;
+        right: 120px;
+        font-size: 2rem;
+    }
+    .right {
+        top: 1.5%;
+        right: 9.3%;
+        font-size: 2rem;
+    }
+
+    .fig-1 .text-1, .fig-1 .text-2, .fig-1 .text-3 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        transition: 0.6s;
+    
+        background: rgba(65, 65, 65, 0.6);
+        color: white;
+    }
+    .text-1:hover, .text-2:hover, .text-3:hover{
+        opacity: 1;
+    }
+    
+    .fig-1 .text-1 h2 {
+        font-size: 2.5rem;
+        position: relative;
+        right: -30%;
+        top: 10%;
+        color: white;
+    }
+    .fig-1 .text-1 p {
+        position: relative;
+        top: 45%;
+        color: white;
+        font-size: 1.4rem;
+    }
+    .fig-1 .text-2 h2 {
+        font-size: 2.5rem;
+        position: relative;
+        right: -22%;
+        top: 10%;
+        color: white;
+    }
+    .fig-1 .text-2 p {
+        position: relative;
+        top: 45%;
+        color: white;
+        font-size: 1.4rem;
+    }
+    .fig-1 .text-3 h2 {
+        font-size: 1.9rem;
+        position: relative;
+        right: -12%;
+        top: 10%;
+        color: white;
+    }
+    .fig-1 .text-3 p {
+        position: relative;
+        top: 45%;
+        color: white;
+        font-size: 1.4rem;
+    }
+    .text-1 p, .text-2 p, .text-3 p  {
+        display: unset;
+    }
+    .text {
+        max-width: 400px;
+        align-items: center;
+        margin-top: 50px;
+        font-weight: 900;
+    }
+    .carrosel-1 { 
+        display: flex;
+        width: 600px;
+    }
+    .Imgs {
+        width: 1000px;
+        text-align: center;
+    }
+    .Imgs p {
+        margin-right: 25px;
+    }
+    .Imgs img {
+        height: 400px;
+        width: 600px;
+    }
+    .container {
+        overflow: scroll;
+        scroll-snap-type: both mandatory;
+        scroll-padding: 1rem;
+        max-width: 800px;  
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+    .figure-2 {
+        width: 100%;
+        align-items: center;
+    }
+    .figure-2 p {
+        font-size: 1.6rem;
+        align-self: self-start;
+        margin-left: 28px;
+    }
+    .figure-3 {
+        position: relative;
+        align-items: center;
+        width: 100%;
+        height: 630px;
+    }
+    .figure-3 h1 {
+        position: absolute;
+        top: 40px;
+        font-size: 1.7rem;
+    }
+    .container-2 {
+        max-width: 400px;
+        max-height: 100%;
+    }
+    .carrosel-2 {
+        display: flex;
+        width: 1200px;
+    }
+    .box-of-text {
+        width: 400px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .box-of-text span {
+        font-size: 1.3rem;
+    }
+    .name {
+        font-size: 1.4rem;
+        font-weight: 900;
+    
+        margin-top: 15px;
+    }
+    .job {
+        font-size: 0.9rem;
+        opacity: .6;
+    }
+    .left-2 {
+        position: absolute;
+        left: 5%;
+        bottom: 50%;
+        font-size: 25px;
+    }
+    .right-2 {
+        position: absolute;
+        right: 5.2%;
+        bottom: 50%;
+        font-size: 25px;
+    }
+    .footer-content {
+        gap: 20px;
+    }
+    .footer-column h4 {
+        font-size: 1.3rem;
+    }
+    .footer-column ul li {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    body {
+        padding: 50px 120px;
+    }
+    .burger-menu {
+        display: none;
+    }
+    header, .lista-2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    header {
+        justify-content: space-around;
+    }
+    header h1 {
+        position: absolute;
+        left: 9%;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 100px;
+    }
+      
+    nav li {
+        display: inline-block;
+        position: relative;
+    }
+    .lista-2 li:hover {
+        color: #000;
+    }
+      
+    nav li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+    }
+    .has-dropdown i {
+        font-size: .7rem;
+        color: #000;
+    }
+    .left {
+        top: 1.5%;
+        right: 150px;
+    }
+    .right {
+        top: 1.5%;
+        right: 9.3%;
+    }
+      
+    .dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        z-index: 10000;
+        width: 150px;
+    }
+      
+    .has-dropdown:hover .dropdown {
+        display: block;
+    }
+    .has-dropdown {
+        font-weight: 700;
+    }
+      
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        z-index: 10000;
+        margin: 11px;
+        
+    }
+      
+    .has-submenu:hover .submenu {
+        display: block;
+    }
+      
+    .caixa .fig-1 {
+        position: relative;
+        left: 0;
+        width: 65%;
+    }
+    .caixa2 .fig-1 {
+        position: absolute;
+        right: 9.5%;
+        top: 20%;
+        width: 22%;
+        height: 200px;
+    }
+    .caixa3 .fig-1 {
+        position: absolute;
+        right: 9.5%;
+        top: 49.5%;
+        width: 22%;
+        height: 200px;
+    }
+    .caixa.fig-1 img {
+        width: 100%;
+        display: block;
+        height: 100%;
+    }
+    .caixa .fig-1:hover {
+        width: 65%;
+    }
+    .caixa .fig-1 .text-1{
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transition: 0.6s;
+    
+        background: rgba(65, 65, 65, 0.6);
+        color: white;
+    }
+    .caixa .fig-1 .text-1:hover {
+        opacity: 1;
+    }
+    .caixa .fig-1 .text-1 h2 {
+        font-size: 2.8rem;
+    }
+    .caixa .fig-1 .text-1 p {
+        font-size: 2rem;
+    }
+    .caixa2 .fig-1 .text-2 h2, .caixa3 .fig-1 .text-3 h2 {
+        font-size: 1.2rem;
+    }
+    .box-of-text-2 .text {
+        font-size: 2rem;
+    }
+    .figure-2 p {
+        margin-bottom: 20px;
+    }
+    .figure-3 {
+        position: relative;
+        align-items: center;
+        width: 100%;
+        height: 800px;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .caixa2 .fig-1 {
+        position: absolute;
+        right: 12%;
+        top: 20%;
+        width: 22%;
+        height: 220px;
+    }
+    .caixa3 .fig-1 {
+        position: absolute;
+        right: 12%;
+        top: 54.5%;
+        width: 22%;
+        height: 220px;
+    }
+    .left {
+        top: 1.5%;
+        right: 23rem;
+    }
+    .right {
+        top: 1.5%;
+        right: 19rem;
+    }
+    .figure-3 {
+        height: 830px;
+    }
+}
