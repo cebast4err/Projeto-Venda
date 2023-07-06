@@ -639,8 +639,8 @@ footer li a {
         font-weight: 700;
     }
     .Imgs img {
-        height: 370px;
-        width: auto;
+        height: 400px;
+        width: 100%;
     }
       
     .submenu {
@@ -808,6 +808,4 @@ footer li a {
     .right-2 {
         color: #000;
     } 
-}
-@media screen and (min-width: 3440px) {
 }
