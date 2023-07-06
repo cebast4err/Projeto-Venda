@@ -10,7 +10,7 @@ body {
     background-color: white;
     padding: 35px 55px;
 }
-a, li {
+li {
     cursor: pointer;
 }
 header {

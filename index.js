@@ -8,7 +8,7 @@ const listaLoja = document.querySelectorAll('.drop3 > li');
 const fechar = document.querySelector('.big-page p')
 const abrir = document.querySelector('.burger-menu')
 
-window.addEventListener('scroll', function () {
+ window.addEventListener('scroll', function () {
   var buttonScrool = document.querySelector('.buttonScrool')
 
   if (window.scrollY > 300) {
