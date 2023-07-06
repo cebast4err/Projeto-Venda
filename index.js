@@ -8,6 +8,23 @@ const listaLoja = document.querySelectorAll('.drop3 > li');
 const fechar = document.querySelector('.big-page p')
 const abrir = document.querySelector('.burger-menu')
 
+window.addEventListener('scroll', function () {
+  var buttonScrool = document.querySelector('.buttonScrool')
+
+  if (window.scrollY > 300) {
+    buttonScrool.style.display = 'block'
+  }
+  else {
+    buttonScrool.style.display = 'none'
+  }
+})
+document.querySelector('.buttonScrool').addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+})
+
 abrir.addEventListener('click', function() {
   document.querySelector('.big-page').style.transform = 'translateX(0)'
 })
